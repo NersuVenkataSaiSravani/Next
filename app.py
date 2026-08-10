@@ -1,3 +1,5 @@
 def addition(a,b):
    return a+b
-print(addition(12,34))
+a=int(input())
+b=int(input())
+print(addition(a,b))
