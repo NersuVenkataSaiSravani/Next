@@ -39,6 +39,6 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          script: |   # With '|' we can write multiple commands, multiple lines of text
+          script: |   # With '|' we can write multiple commands, multiple lines of text..... Script is input parameter that tells ssh action that these r the cmds want to execute on remote EC2 machine.
             cd /home/ubuntu/addition-app
             python3 app.py
