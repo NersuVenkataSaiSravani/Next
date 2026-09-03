@@ -19,8 +19,8 @@ jobs:
           python-version: '3.11'
 
       - name: Test application
-        run: python -m py_compile app.py #Commonly used in a pipeline to check whether a Python file has syntax errors.
-
+        run: python -m py_compile app.py #Commonly used in a pipeline to check whether a Python file has syntax errors. Compiles the file without running it. runs a python compiler module . Check all python files before deploying..
+      
       - name: Build
         run: echo "Build successful"
 
